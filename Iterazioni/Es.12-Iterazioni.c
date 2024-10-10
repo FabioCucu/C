@@ -1,0 +1,29 @@
+/*Dato N un numero intero positivo, calcolare e visualizzare la
+somma dei primi N numeri pari.*/
+
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+
+	int num1, somma = 0;
+
+	do
+	{									   
+		printf("inserisci il primo numero\n"); 
+		scanf("%d", &num1);		
+
+	} while (num1 <= 0);					   
+
+	for (int i = 0; i <= num1; i++)
+    {
+        if (i % 2 == 0)
+        {
+            somma += i;
+        }
+    }
+
+    printf("La somma dei primi numeri interi positivi è: %d\n", somma);
+
+	return 0;
+}
